@@ -1,5 +1,5 @@
 # MWC
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17670546.svg)](https://doi.org/10.5281/zenodo.17670546) ![GitHub License](https://img.shields.io/github/license/pinto0309/MWC) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/PINTO0309/mwc)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19617672.svg)](https://doi.org/10.5281/zenodo.19617672) ![GitHub License](https://img.shields.io/github/license/pinto0309/MWC) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/PINTO0309/mwc)
 
 Mask wearing classifier.
 
@@ -188,7 +188,7 @@ If you find this project useful, please consider citing:
   month     = {04},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.17670546},
+  doi       = {10.5281/zenodo.19617672},
   url       = {https://github.com/PINTO0309/mwc},
   abstract  = {Mask wearing classifier.},
 }
