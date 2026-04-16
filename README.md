@@ -39,6 +39,12 @@ Labels are derived from filenames:
 - `*_mask_*` -> `masked` / `1`
 - otherwise -> `no_masked` / `0`
 
+## Data sample
+
+|1|2|3|4|5|
+|:-:|:-:|:-:|:-:|:-:|
+||||||
+
 ## Training Pipeline
 
 - Use the images located under `dataset/output/002_xxxx_front_yyyyyy` together with their annotations in `dataset/output/002_xxxx_front.csv`.
