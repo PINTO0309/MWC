@@ -1,5 +1,15 @@
 # MWC
+![GitHub License](https://img.shields.io/github/license/pinto0309/MWC) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/PINTO0309/mwc)
+
 Mask wearing classifier.
+
+|Variant|Size|F1|CPU<br>inference<br>latency|ONNX|
+|:-:|:-:|:-:|:-:|:-:|
+|P|115 KB|0.9983|0.23 ms|[Download]()|
+|N|176 KB||0.41 ms|[Download]()|
+|T|280 KB||0.52 ms|[Download]()|
+|S|495 KB|0.9997|0.64 ms|[Download]()|
+|L|6.4 MB|0.9998|1.03 ms|[Download]()|
 
 ## Setup
 
