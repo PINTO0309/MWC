@@ -1,5 +1,5 @@
 # MWC
-![GitHub License](https://img.shields.io/github/license/pinto0309/MWC) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/PINTO0309/mwc)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17670546.svg)](https://doi.org/10.5281/zenodo.17670546) ![GitHub License](https://img.shields.io/github/license/pinto0309/MWC) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/PINTO0309/mwc)
 
 Mask wearing classifier.
 
@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/a02290cd-b8cc-45b6-8e97-2144cc2628ae
 
 |Variant|Size|F1|CPU<br>inference<br>latency|ONNX|
 |:-:|:-:|:-:|:-:|:-:|
-|P|115 KB||0.23 ms|[Download]()|
+|P|115 KB|0.9981|0.23 ms|[Download]()|
 |N|176 KB|0.9995|0.41 ms|[Download]()|
 |T|280 KB|0.9996|0.52 ms|[Download]()|
 |S|495 KB|0.9998|0.64 ms|[Download]()|
@@ -77,8 +77,6 @@ Labels are derived from filenames:
 
 ## Training Pipeline
 
-- Use the images located under `dataset/output/002_xxxx_front_yyyyyy` together with their annotations in `dataset/output/002_xxxx_front.csv`.
-- Every augmented image that originates from the same `still_image` stays in the same split to prevent leakage.
 - The training loop relies on `BCEWithLogitsLoss` plus class-balanced `pos_weight` to stabilise optimisation under class imbalance; inference produces sigmoid probabilities. Use `--train_resampling weighted` to switch on the previous `WeightedRandomSampler` behaviour, or `--train_resampling balanced` to physically duplicate minority classes before shuffling.
 - Training history, validation metrics, optional test predictions, checkpoints, configuration JSON, and ONNX exports are produced automatically.
 - Per-epoch checkpoints named like `mwc_epoch_0001.pt` are retained (latest 10), as well as the best checkpoints named `mwc_best_epoch0004_f1_0.9321.pt` (also latest 10).
@@ -177,7 +175,24 @@ uv run python -m mwc exportonnx \
 
 ## Arch
 
+<img width="300" alt="mwc_p_48x48" src="https://github.com/user-attachments/assets/43a75836-b851-4941-80c1-82d24fa37487" />
 
+## Citation
+
+If you find this project useful, please consider citing:
+
+```bibtex
+@software{hyodo2026mwc,
+  author    = {Katsuya Hyodo},
+  title     = {PINTO0309/MWC},
+  month     = {04},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.17670546},
+  url       = {https://github.com/PINTO0309/mwc},
+  abstract  = {Mask wearing classifier.},
+}
+```
 
 ## Acknowledgments
 
