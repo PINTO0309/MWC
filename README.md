@@ -20,6 +20,22 @@ uv sync
 source .venv/bin/activate
 ```
 
+## Inference
+
+```bash
+uv run python demo_mwc.py \
+-hm mwc_l_48x48.onnx \
+-v 0 \
+-ep cuda \
+-dlr -dnm -dgm -dhm -dhd
+
+uv run python demo_mwc.py \
+-hm mwc_l_48x48.onnx \
+-v 0 \
+-ep tensorrt \
+-dlr -dnm -dgm -dhm -dhd
+```
+
 ## Archive extraction
 
 Extract images from the source archive into numbered folders under `data/`,
