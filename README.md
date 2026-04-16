@@ -3,6 +3,8 @@
 
 Mask wearing classifier.
 
+https://github.com/user-attachments/assets/a02290cd-b8cc-45b6-8e97-2144cc2628ae
+
 |Variant|Size|F1|CPU<br>inference<br>latency|ONNX|
 |:-:|:-:|:-:|:-:|:-:|
 |P|115 KB||0.23 ms|[Download]()|
