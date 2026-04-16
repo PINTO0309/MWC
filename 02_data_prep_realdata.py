@@ -58,15 +58,15 @@ def load_detector_session(model_path: Path) -> tuple[ort.InferenceSession, str]:
     if not model_path.exists():
         raise FileNotFoundError(f"Detector model not found: {model_path}")
     providers = [
-        (
-            "TensorrtExecutionProvider",
-            {
-                "trt_fp16_enable": True,
-                "trt_engine_cache_enable": True,
-                "trt_engine_cache_path": ".",
-                "trt_op_types_to_exclude": "NonMaxSuppression,NonZero,RoiAlign",
-            },
-        ),
+        # (
+        #     "TensorrtExecutionProvider",
+        #     {
+        #         "trt_fp16_enable": True,
+        #         "trt_engine_cache_enable": True,
+        #         "trt_engine_cache_path": ".",
+        #         "trt_op_types_to_exclude": "NonMaxSuppression,NonZero,RoiAlign",
+        #     },
+        # ),
         "CUDAExecutionProvider",
         "CPUExecutionProvider",
     ]
