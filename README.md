@@ -6,7 +6,7 @@ Mask wearing classifier.
 |Variant|Size|F1|CPU<br>inference<br>latency|ONNX|
 |:-:|:-:|:-:|:-:|:-:|
 |P|115 KB|0.9983|0.23 ms|[Download]()|
-|N|176 KB||0.41 ms|[Download]()|
+|N|176 KB|0.9994|0.41 ms|[Download]()|
 |T|280 KB||0.52 ms|[Download]()|
 |S|495 KB|0.9997|0.64 ms|[Download]()|
 |L|6.4 MB|0.9998|1.03 ms|[Download]()|
