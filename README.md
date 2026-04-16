@@ -67,6 +67,8 @@ Labels are derived from filenames:
 - `*_mask_*` -> `masked` / `1`
 - otherwise -> `no_masked` / `0`
 
+<img width="600" alt="dataset_48x48_class_ratio" src="https://github.com/user-attachments/assets/8ce1e680-5f10-4f0c-bf25-4338da47ef40" />
+
 ## Data sample
 
 |1|2|3|4|5|
