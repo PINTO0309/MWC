@@ -7,11 +7,11 @@ https://github.com/user-attachments/assets/a02290cd-b8cc-45b6-8e97-2144cc2628ae
 
 |Variant|Size|F1|CPU<br>inference<br>latency|ONNX|
 |:-:|:-:|:-:|:-:|:-:|
-|P|115 KB|0.9981|0.23 ms|[Download]()|
-|N|176 KB|0.9995|0.41 ms|[Download]()|
-|T|280 KB|0.9996|0.52 ms|[Download]()|
-|S|495 KB|0.9998|0.64 ms|[Download]()|
-|L|6.4 MB|0.9998|1.03 ms|[Download]()|
+|P|115 KB|0.9981|0.23 ms|[Download](https://github.com/PINTO0309/MWC/releases/download/onnx/mwc_p_48x48.onnx)|
+|N|176 KB|0.9995|0.41 ms|[Download](https://github.com/PINTO0309/MWC/releases/download/onnx/mwc_n_48x48.onnx)|
+|T|280 KB|0.9996|0.52 ms|[Download](https://github.com/PINTO0309/MWC/releases/download/onnx/mwc_t_48x48.onnx)|
+|S|495 KB|0.9998|0.64 ms|[Download](https://github.com/PINTO0309/MWC/releases/download/onnx/mwc_s_48x48.onnx)|
+|L|6.4 MB|0.9998|1.03 ms|[Download](https://github.com/PINTO0309/MWC/releases/download/onnx/mwc_l_48x48.onnx)|
 
 ## Setup
 
