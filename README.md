@@ -154,3 +154,41 @@ uv run python -m mwc exportonnx \
 --output mwc_s_48x48.onnx \
 --opset 17
 ```
+
+## Acknowledgments
+
+- https://github.com/cleardusk/3DDFA: MIT License
+  ```bibtex
+  @misc{3ddfa_cleardusk,
+    author =       {Guo, Jianzhu and Zhu, Xiangyu and Lei, Zhen},
+    title =        {3DDFA},
+    howpublished = {\url{https://github.com/cleardusk/3DDFA}},
+    year =         {2018}
+  }
+
+  @inproceedings{guo2020towards,
+    title=        {Towards Fast, Accurate and Stable 3D Dense Face Alignment},
+    author=       {Guo, Jianzhu and Zhu, Xiangyu and Yang, Yang and Yang, Fan and Lei, Zhen and Li, Stan Z},
+    booktitle=    {Proceedings of the European Conference on Computer Vision (ECCV)},
+    year=         {2020}
+  }
+
+  @article{zhu2017face,
+    title=      {Face alignment in full pose range: A 3d total solution},
+    author=     {Zhu, Xiangyu and Liu, Xiaoming and Lei, Zhen and Li, Stan Z},
+    journal=    {IEEE transactions on pattern analysis and machine intelligence},
+    year=       {2017},
+    publisher=  {IEEE}
+  }
+  ```
+- https://github.com/PINTO0309/PINTO_model_zoo/tree/main/472_DEIMv2-Wholebody34: Apache 2.0 License
+  ```bibtex
+  @software{DEIMv2-Wholebody34,
+    author={Katsuya Hyodo},
+    title={Lightweight human detection models generated on high-quality human data sets. It can detect objects with high accuracy and speed in a total of 28 classes: body, adult, child, male, female, body_with_wheelchair, body_with_crutches, head, front, right-front, right-side, right-back, back, left-back, left-side, left-front, face, eye, nose, mouth, ear, collarbone, shoulder, solar_plexus, elbow, wrist, hand, hand_left, hand_right, abdomen, hip_joint, knee, ankle, foot.},
+    url={https://github.com/PINTO0309/PINTO_model_zoo/tree/main/472_DEIMv2-Wholebody34},
+    year={2025},
+    month={10},
+    doi={10.5281/zenodo.17625710}
+  }
+  ```
