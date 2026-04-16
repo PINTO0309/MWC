@@ -67,7 +67,7 @@ SIZE=48x48
 uv run python -m mwc train \
 --data_root data/dataset.parquet \
 --output_dir runs/mwc_${SIZE} \
---epochs 100 \
+--epochs 40 \
 --batch_size 256 \
 --train_resampling balanced \
 --image_size ${SIZE} \
@@ -87,7 +87,7 @@ VAR=s
 uv run python -m mwc train \
 --data_root data/dataset.parquet \
 --output_dir runs/mwc_is_${VAR}_${SIZE} \
---epochs 100 \
+--epochs 40 \
 --batch_size 256 \
 --train_resampling balanced \
 --image_size ${SIZE} \
@@ -107,7 +107,7 @@ SIZE=48x48
 uv run python -m mwc train \
 --data_root data/dataset.parquet \
 --output_dir runs/mwc_convnext_${SIZE} \
---epochs 100 \
+--epochs 40 \
 --batch_size 256 \
 --train_resampling balanced \
 --image_size ${SIZE} \
@@ -129,3 +129,12 @@ uv run python -m mwc train \
   ```bash
   tensorboard --logdir runs/mwc
   ```
+
+### ONNX Export
+
+```bash
+uv run python -m mwc exportonnx \
+--checkpoint runs/mwc_is_s_48x48/mwc_best_epoch0049_f1_0.9939.pt \
+--output mwc_s_48x48.onnx \
+--opset 17
+```
