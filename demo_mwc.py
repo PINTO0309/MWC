@@ -1413,7 +1413,6 @@ def main():
     white_line_width = bounding_box_line_width
     colored_line_width = white_line_width - 1
     tracker = SimpleSortTracker()
-    head_tracker = SimpleSortTracker()
     track_color_cache: Dict[int, np.ndarray] = {}
     tracking_enabled_prev = enable_tracking
     while True:
@@ -1466,19 +1465,16 @@ def main():
             box.head_state = 1 if prob_masked >= 0.50 else 0
             box.head_label = MASKED_LABEL if box.head_state == 1 else ''
 
-        head_tracker.update(head_boxes)
-
         if file_paths is None:
             cv2.putText(debug_image, f'{elapsed_time*1000:.2f} ms', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2, cv2.LINE_AA)
             cv2.putText(debug_image, f'{elapsed_time*1000:.2f} ms', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 1, cv2.LINE_AA)
 
-        body_boxes = [box for box in boxes if box.classid == 0]
         current_tracking_enabled = enable_tracking
         if current_tracking_enabled:
             if not tracking_enabled_prev:
                 tracker = SimpleSortTracker()
                 track_color_cache.clear()
-            tracker.update(body_boxes)
+            tracker.update(head_boxes)
             active_track_ids = {track['id'] for track in tracker.tracks}
             stale_ids = [tid for tid in track_color_cache.keys() if tid not in active_track_ids]
             for tid in stale_ids:
@@ -1660,7 +1656,7 @@ def main():
                 cv2.rectangle(debug_image, (box.x1, box.y1), (box.x2, box.y2), color, colored_line_width)
 
             # TrackID text
-            if enable_trackid_overlay and classid in (0, 7) and box.track_id > 0:
+            if enable_trackid_overlay and classid == 7 and box.track_id > 0:
                 track_text = f'ID: {box.track_id}'
                 text_x = max(box.x1 - 5, 0)
                 text_y = box.y1 - 30
