@@ -43,7 +43,7 @@ Labels are derived from filenames:
 
 |1|2|3|4|5|
 |:-:|:-:|:-:|:-:|:-:|
-||||||
+|<img width="48" height="48" alt="_HELENFlip_HELEN_166033328_1_1_1_mask_1" src="https://github.com/user-attachments/assets/4d192a75-dda0-4d4d-a042-51703d7077cb" />|<img width="48" height="48" alt="_HELEN_HELEN_263567973_1_0_6" src="https://github.com/user-attachments/assets/a9fb2976-2c86-4745-8eb0-f5e1a9488537" />|<img width="48" height="48" alt="_HELENFlip_HELEN_2652699508_1_6_3_mask_1" src="https://github.com/user-attachments/assets/0b07847e-3bcc-442b-8bd5-47aedf258325" />|<img width="48" height="48" alt="_HELEN_HELEN_30427236_1_1_5" src="https://github.com/user-attachments/assets/9c4d422d-0542-4dbc-8be6-37ef28efe97a" />|<img width="48" height="48" alt="_HELENFlip_HELEN_3052865023_5_0_1" src="https://github.com/user-attachments/assets/73b702c1-447d-4d42-a2e1-bc66ebcd88d9" />|
 
 ## Training Pipeline
 
