@@ -53,7 +53,7 @@ Labels are derived from filenames:
 
 |1|2|3|4|5|
 |:-:|:-:|:-:|:-:|:-:|
-|<img width="48" height="48" alt="_HELENFlip_HELEN_166033328_1_1_1_mask_1" src="https://github.com/user-attachments/assets/4d192a75-dda0-4d4d-a042-51703d7077cb" />|<img width="48" height="48" alt="_HELEN_HELEN_263567973_1_0_6" src="https://github.com/user-attachments/assets/a9fb2976-2c86-4745-8eb0-f5e1a9488537" />|<img width="48" height="48" alt="_HELENFlip_HELEN_2652699508_1_6_3_mask_1" src="https://github.com/user-attachments/assets/0b07847e-3bcc-442b-8bd5-47aedf258325" />|<img width="48" height="48" alt="_HELEN_HELEN_30427236_1_1_5" src="https://github.com/user-attachments/assets/9c4d422d-0542-4dbc-8be6-37ef28efe97a" />|<img width="48" height="48" alt="_HELENFlip_HELEN_3052865023_5_0_1" src="https://github.com/user-attachments/assets/73b702c1-447d-4d42-a2e1-bc66ebcd88d9" />|
+|<img width="48" height="48" alt="image" src="https://github.com/user-attachments/assets/0c8dd9bd-eec3-44fa-9a15-ab0d92b0247c" />|<img width="48" height="48" alt="image" src="https://github.com/user-attachments/assets/5e4dccbd-5b54-4296-9f96-ffba6e3c0298" />|<img width="48" height="48" alt="image" src="https://github.com/user-attachments/assets/4cde7b4b-b162-49c0-b660-474688f66f50" />|<img width="48" height="48" alt="image" src="https://github.com/user-attachments/assets/5aa8d6b3-82e5-4430-9934-2f204e1ec51b" />|<img width="48" height="48" alt="image" src="https://github.com/user-attachments/assets/32aa0434-767a-4e39-a0cc-09aeb886881e" />|
 
 ## Training Pipeline
 
